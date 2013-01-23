@@ -66,6 +66,11 @@ if (process.argv[2]) {
 	concurrentUsers = parseInt(process.argv[2]);
 }
 
+if (process.argv[3]) {
+	Constants.BaseNumber = parseInt(process.argv[3].split('=')[1]);
+}
+
+console.log("Start to create " + concurrentUsers + " users, with mobageId starting from " + Constants.BaseNumber);
 
 var test = new RedisServerLoadTest();
 test.start(concurrentUsers);

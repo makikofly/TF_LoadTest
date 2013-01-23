@@ -70,6 +70,10 @@ if (process.argv[2]) {
 	number = parseInt(process.argv[2]);
 }
 
+if (process.argv[3]) {
+	Constants.BaseNumber = parseInt(process.argv[3].split('=')[1]);
+}
+
 console.log("Start to create " + number + " new users, with mobageId starting from " + Constants.BaseNumber);
 
 var test = new InitUsersTest();
