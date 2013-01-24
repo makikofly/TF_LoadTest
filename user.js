@@ -50,16 +50,16 @@ User.prototype.play = function () {
 													self.play();
 												}
 											});										
-										}, 5000);
+										}, 3000);
 									}
 								});	
-							}, 5000);
+							}, 3000);
 						}
 					});
-				}, 5000);
+				}, 3000);
 			}
 		});				
-	}, 5000);	
+	}, 3000);	
 }
 
 User.prototype.registerForEvent = function (cb) {
